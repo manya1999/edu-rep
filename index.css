@@ -1,0 +1,197 @@
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #463940;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:orangered;
+  }
+
+body{
+    height: 100%;
+    width: 100%;
+}
+.navbar{
+    background-color: #0b1728;
+    padding:1% 0;
+    font-size:1.2em;
+    border-radius: 0px 0px 10px 10px;
+ }
+ .navbar-brand{
+     min-height:55px;
+     padding:0 15px 5px;
+ }
+ .navbar-default .navbar-nav li a{
+     color: rgb(204, 69, 16);
+ }
+ .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a.active{
+    color: orangered;
+ }
+ #home{
+    height: 600px;
+    background: url("./images/img1.jpg") no-repeat center center fixed; 
+    width: 100%;
+    position: relative;
+    display: table;
+    background-size: cover;
+} 
+.wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing-demo {
+    width: 39ch;
+    animation: typing 5s steps(39), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size:50px;
+    color: orangered;
+    font-weight: bolder;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  @media(max-width:760px){
+      .typing-demo{
+          width:39ch;
+          animation: typing 5s steps(39ch) , blink .5s step-end infinite alternate;
+          white-space: nowrap;
+          overflow: hidden;
+          border-right: 3px solid;
+          font-family: monospace;
+          font-size: 21px;
+          font-weight: bolder;
+          color:orangered;
+      }
+      @keyframes typing {
+        from {
+          width: 0
+        }
+      }
+          
+      @keyframes blink {
+        50% {
+          border-color: transparent
+        }
+
+  }
+}
+ 
+.padding{
+    padding:80px 0;
+}
+.padding img{
+    width: 100%;
+}
+#fixed{
+   height:450px;
+   background: url("./images/img3.jpg") no-repeat center center fixed; 
+   display: table;
+   position: relative;
+   width: 100%;
+   background-size: cover;
+   opacity: 0.7;
+
+}
+footer{
+    width:100%;
+    background-color:#0b1728;
+    padding: 5% 5% 10% 10%;
+    color: rgb(250, 243, 229);
+
+
+}
+footer p{
+    color: orangered;
+}
+.fa{
+    padding:15px;
+    font-size: 25px;
+    color: white;
+
+}
+.fa:hover{
+    columns: #d5d5d5;
+}
+ .icon{
+    max-width: 100px;
+} 
+.container{
+  margin-bottom: 70px;
+} 
+.padding .cont-head h2{
+    font-size:40px;
+    text-align: center;
+    color: orangered;
+    font-weight: bold;
+}
+@media(max-width: 768px){
+    .fa{
+        font-size:20px;
+        padding: 10px;
+    }
+    .icon{
+      padding-top:5%;
+      max-width: 100px;
+    }
+
+}
+.head:hover{
+    color:orangered;
+    font-size:x-large;
+}
+
+.bor div{
+  width: 100px;
+  height: 8px;
+  background: red;
+  position: relative;
+  animation: mymove 4s infinite;
+  border-radius: 5px;
+}
+  
+  @keyframes mymove{
+    0%   {background-color:orangered; left:40%; top:0;}
+    25%  {background-color:orangered;right:50%; top:0;}
+    50%  {background-color:#0b1728; left:60%; top:0;}
+    75%  {background-color:#0b1728;right:25%; top:0;}
+    100% {background-color:orangered; left:25%; top:0;} 
+  }
+  .nb{
+      display: flex;
+     justify-content: center;
+  }
+  .nb button{
+      box-shadow:0.5px 0.2px 0.5px 0.2px  #463940;
+      margin: 10px;
+  }
+  .nb button:hover{
+     background-color: orangered;
+      size: 100px;
+      
+  }
